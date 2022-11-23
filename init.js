@@ -99,7 +99,7 @@ const Fetch = new Promise(res => {
         configurable: true
 
     })
-    fetch("/data.json").then(res => {
+    fetch("data.json").then(res => {
         return res.json()
     }).then(data => {
         console.log(data.Matter)

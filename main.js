@@ -39,7 +39,7 @@ class Matter {
     }
     get template() {
         return `<div class="matter-img">
-    <img src="/img/${this.img}.jpg" alt="" />
+    <img src="img/${this.img}.jpg" alt="" />
 </div>
 
 <div class="matter-info">
