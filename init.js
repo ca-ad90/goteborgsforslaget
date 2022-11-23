@@ -144,7 +144,7 @@ const Fetch = new Promise(res => {
             },
             getActive: {
                 value: function (filter) {
-                    debugger
+
                     let date = new Date(new Date().setDate(new Date().getDate() - 90))
                     let active = filterData(this, { Slutdatum: `>${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}` })
                     return filterData(active, filter)
@@ -227,7 +227,7 @@ const Fetch = new Promise(res => {
                         } else {
                             qDat = qDat.replace(/[^\d-,]/g, "")
                         }
-                        debugger
+
                         let a, b
                         switch (test) {
                             case ">":
@@ -239,7 +239,7 @@ const Fetch = new Promise(res => {
                             case "<":
                                 a = Number(dVal)
                                 b = Number(qDat)
-                                debugger
+
                                 retVal = a < b
                                 break;
                             case "<=":
