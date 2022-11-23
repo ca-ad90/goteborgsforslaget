@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="/search.css" />
+        <link rel="stylesheet" href="main.css" />
+        <script src="/init.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#home"><img src="logo.png" alt="logo" class="logo" /></a>
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu"
+                ><span class="hamb-line"></span
+            ></label>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="#">Inställningar</a></li>
+                    <li><a href="#">Om oss</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Hjälp</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="box">
+                <div id="box-content">
+                    <h1 id="info-title">Göteborgsförslaget</h1>
+                    <p id="info-text" class="info">
+                        Har du en idé till politikerna om hur vardagslivet i
+                        Göteborg kan bli bättre? Lämna ditt förslag här. Du kan
+                        också kommentera och rösta på andras förslag.
+                    </p>
+                    <a id="mer-knapp" class="info" href="#" target="_top"
+                        >Läs mer.</a
+                    >
+                </div>
+            </div>
+            <div id="search-div">
+                <h2 id="search-h2" for="search">Sök på förslag</h2>
+                <div id="search-input-div">
+                    <input
+                        id="search-input"
+                        type="text"
+                        placeholder="Skriv sökord här..."
+                    />
+                    <button id="search-button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="matters-content">
+                <div class="matter-filter">
+                    <div></div>
+                </div>
+                <!-- <section id="favoritMatters"></section> -->
+                <section id="latest-matters"></section>
+            </div>
+        </main>
+        <footer>
+            <!-- <div class="footer"> -->
+            <p class="ikon" id="förslagbild">
+                <a href="" target="_blank"
+                    ><i class="bi bi-pencil-square"></i
+                ></a>
+            </p>
+
+            <p class="ikon" id="kategorierbild">
+                <a href="" target="_blank"
+                    ><i class="bi bi-file-earmark-text"></i
+                ></a>
+            </p>
+
+            <p class="ikon" id="sparadebild">
+                <a href="" target="_blank"><i class="bi bi-heart"></i></a>
+            </p>
+
+            <p class="ikon" id="profilbild">
+                <a href="" target="_blank"><i class="bi bi-person-fill"></i></a>
+            </p>
+            <p class="text" id="förslagtext">Skriv förslag</p>
+            <p class="text" id="kategoriertext">Kategorier</p>
+            <p class="text" id="sparadetext">Sparade</p>
+            <p class="text" id="profiltext">Profil</p>
+            <!-- </div> -->
+        </footer>
+        <script src="main.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

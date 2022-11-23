@@ -1,0 +1,193 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.header {
+  background-color: white;
+  width: 100%;
+  position: sticky;
+  z-index: 2;
+  height: 10vh;
+  top: 0;
+}
+
+.logo {
+  padding: 1rem;
+}
+
+.nav {
+  max-height: none;
+  top: 10vh;
+  position: fixed;
+  float: right;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.nav {
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu a {
+  display: flex;
+  padding: 1.5rem;
+  color: #ffffff;
+  font-size: 2rem;
+  justify-content: left;
+  background-color: #005799;
+}
+
+.menu a:hover {
+  background-color: var(--gray);
+}
+
+.menu li {
+  float: left;
+}
+
+.menu a:hover {
+  background-color: #00579999;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hamb {
+  cursor: pointer;
+  float: right;
+  padding: 3rem;
+}
+
+span.hamb-line {
+  width: 3.5rem;
+}
+
+.hamb-line {
+  background: #333;
+  display: block;
+  height: 0.2rem;
+  position: relative;
+  margin: 1rem;
+}
+
+.hamb-line::before,
+.hamb-line::after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.hamb-line::before {
+  top: 0.7rem;
+}
+
+.hamb-line::after {
+  top: -0.7rem;
+}
+
+.side-menu {
+  display: none;
+}
+
+.side-menu:checked~nav {
+  max-height: 100%;
+}
+
+.side-menu:checked~.hamb .hamb-line {
+  background: transparent;
+}
+
+.side-menu:checked~.hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.side-menu:checked~.hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+#box {
+  margin: 4em 2.6em;
+}
+
+#box-content {
+  min-width: 24em;
+  max-width: 78em;
+}
+
+#info-title {
+  font-size: 2.4em;
+  font-family: Arial;
+  padding-bottom: 0.9em;
+}
+
+.info {
+  font-size: 1.8em;
+  font-family: Arial;
+  font-weight: 400;
+}
+
+#mer-knapp {
+  color: #0072bf;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #005799;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 9rem;
+  text-align: center;
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-areas:
+    "förslagbild kategorierbild sparadebild profilbild"
+    "förslagtext kategoriertext sparadetext profiltext";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.ikon {
+  display: inline;
+  margin-top: 1rem;
+}
+
+.text {
+  color: white;
+}
+
+i {
+  font-size: 4.5rem;
+  color: white;
+}
